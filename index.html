@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Random Trip Generator</title>
 </head>
 <body>
-    <script src="app.js"></script>
+
+    <div class="first-section">
+        <form action="" id="day-trip-form">
+            <button type="button" class="randomizer-buttons" id="random-button">Random Trip!</button>
+
+            <label class="randomizer-title">Randomly Generated Trip!</label><br>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination-input" size="23"></input><br>
+            <label for="transportation">Transportation:</label>
+            <input type="text" id="transportation-input" size="23" ><br>
+            <label for="entertainment">Entertainment:</label>
+            <input type="text" id="entertainment-input" size="23" ><br>
+            <label for="restaurant">Restaurant:</label>
+            <input type="text" id="restaurant-input" size="23" ><br>
+            <button id="reset-button" type="reset-button" class="randomizer-buttons">Dont like it? Click to RESET!</button><br><br>
+            <button id="confirm-button" class="randomizer-buttons">Confirm your Random Trip!</button>
+        </form>
+    </div>
+
+
+
+
+    <script src="dayTripGen.js"></script>
 </body>
 </html>

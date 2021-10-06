@@ -48,3 +48,11 @@ function entertainmentSelector() {
 let entertainmentResult = entertainmentSelector();
 
 console.log(entertainmentResult);
+
+//Random Button Function
+const randomClick = document.getElementById("random-button").addEventListener("click", function(){
+    document.getElementById("destination-input").value = destinationSelector();
+    document.getElementById("entertainment-input").value = entertainmentSelector();
+    document.getElementById("restaurant-input").value = restaurantSelector();
+    document.getElementById("transportation-input").value = transportationSelector();
+});
