@@ -49,10 +49,22 @@ let entertainmentResult = entertainmentSelector();
 
 console.log(entertainmentResult);
 
-//Random Button Function
+//Random Button 
 const randomClick = document.getElementById("random-button").addEventListener("click", function(){
     document.getElementById("destination-input").value = destinationSelector();
     document.getElementById("entertainment-input").value = entertainmentSelector();
     document.getElementById("restaurant-input").value = restaurantSelector();
     document.getElementById("transportation-input").value = transportationSelector();
+});
+
+
+//Comfirmation Button
+const confirmRandomPlanClick = document.getElementById('confirm-button').addEventListener("click", function(){
+    console.log(`User Trip == 
+Destination:${document.getElementById('destination-input').value},
+Transportation:${document.getElementById('transportation-input').value},
+Entertainment:${document.getElementById('entertainment-input').value},
+Restaurant:${document.getElementById('restaurant-input').value}`)
+;
+    alert("Your random trip is confirmed! Have fun!");
 });
