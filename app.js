@@ -27,7 +27,6 @@ let restaurantResult = restaurantSelector();
 console.log(restaurantResult);
 
 
-
 let transportationArray = ["Uber / Cab", "Bus", "Walk!", "Reindeer"];
 
 function transportationSelector() {
@@ -39,3 +38,13 @@ function transportationSelector() {
 let transResult = transportationSelector();
 
 console.log(transResult);
+
+let entertainmentArray = ["Live Music", "Theater", "Sporting Events", "Alcohol","Outdoor Event"];
+
+function entertainmentSelector() {
+    let entertainment = Math.floor(Math.random() * entertainmentArray.length);
+    return entertainmentArray[entertainment];
+}
+let entertainmentResult = entertainmentSelector();
+
+console.log(entertainmentResult);
