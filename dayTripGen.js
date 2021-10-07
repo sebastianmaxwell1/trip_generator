@@ -67,6 +67,5 @@ Transportation:${document.getElementById('transportation-input').value},
 Entertainment:${document.getElementById('entertainment-input').value},
 Restaurant:${document.getElementById('restaurant-input').value}`)
 ;
-    // alert("Your random trip is confirmed! Have fun!");
     alert(`Your trip is confirmed! Enjoy your trip to ${document.getElementById('destination-input').value}!`)
 });

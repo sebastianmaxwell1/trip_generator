@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,23 @@
 
 
     <style>
-        body {background-color: lightgray;}
+        body {background-color:burlywood;}
     </style>
 
 
 
 </head>
 <body>
-    <h1>Random Trip Generator:</h1>
-    <h2>Cant decide where or what to do? Click the Random trip button below to get you started!</h2>
-    <div class="first-section">
-        <button type="button" class="randomizer-buttons" id="random-button">Random Trip!</button>
+    <section class="hero">
+        <div class="hero-inner">
+            <h1>Random Trip Generator:</h1>
+            <h2>Cant decide where or what to do? Click the Random trip button below to get you started!</h2>
+            <button type="button" class="btn" id="random-button">Random Trip!</button>
+
+        </div>
+    </section>
+    <div class="form">
+        <!-- <button type="button" class="randomizer-buttons" id="random-button">Random Trip!</button> -->
         <form action="" id="day-trip-form">
             <label for="destination">Destination:</label>
             <input type="text" id="destination-input" size="23"></input><br>
