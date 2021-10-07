@@ -11,7 +11,7 @@ function destinationSelector() {
 let destinationResult = destinationSelector();
 
 
-console.log(destinationResult);
+// console.log(destinationResult);
 
 
 
@@ -24,7 +24,7 @@ function restaurantSelector() {
 
 let restaurantResult = restaurantSelector();
 
-console.log(restaurantResult);
+// console.log(restaurantResult);
 
 
 let transportationArray = ["Uber / Cab", "Bus", "Walk!", "Reindeer"];
@@ -37,7 +37,7 @@ function transportationSelector() {
 
 let transResult = transportationSelector();
 
-console.log(transResult);
+// console.log(transResult);
 
 let entertainmentArray = ["Live Music", "Theater", "Sporting Events", "Alcohol","Outdoor Event"];
 
@@ -47,11 +47,12 @@ function entertainmentSelector() {
 }
 let entertainmentResult = entertainmentSelector();
 
-console.log(entertainmentResult);
+// console.log(entertainmentResult);
 
 //Random Button 
 const randomClick = document.getElementById("random-button").addEventListener("click", function(){
     document.getElementById("destination-input").value = destinationSelector();
+    // console.log(destinationSelector);
     document.getElementById("entertainment-input").value = entertainmentSelector();
     document.getElementById("restaurant-input").value = restaurantSelector();
     document.getElementById("transportation-input").value = transportationSelector();
@@ -66,5 +67,6 @@ Transportation:${document.getElementById('transportation-input').value},
 Entertainment:${document.getElementById('entertainment-input').value},
 Restaurant:${document.getElementById('restaurant-input').value}`)
 ;
-    alert("Your random trip is confirmed! Have fun!");
+    // alert("Your random trip is confirmed! Have fun!");
+    alert(`Your trip is confirmed! Enjoy your trip to ${document.getElementById('destination-input').value}!`)
 });
