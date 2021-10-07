@@ -1,5 +1,6 @@
 "use strict"
 
+//arrays
 
 let destinationArray = ["Greece", "Ireland", "Japan", "Florida", "Palestine"]
 
@@ -12,7 +13,6 @@ let destinationResult = destinationSelector();
 
 
 // console.log(destinationResult);
-
 
 
 let restaurantArray = ["Local Resturant", "Chain Resturant", "Finger Foods", "5 Star"];
